@@ -4,7 +4,7 @@
 
 ## Use python 3.9 while you have > python 3.9 in the host
 
-To **pip install autogluon** you might need python 3.9 while in the running jupyter notebook.
+To **pip install autogluon** you might need python 3.9 also in the running jupyter notebook.
 
 One way is to have a virtualenv running jupyter notebook with the pythin 3.9 used also in the notebook.
 
