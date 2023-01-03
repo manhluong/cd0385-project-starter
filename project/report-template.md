@@ -9,9 +9,13 @@ Also I have to downgrade to libomp 11 otherwise lightgbm would make the kernel c
 
 I have documented everything in the README.
 
+I had to set all negative predictions to zero, as you cannot have a negative number of bikes predicted.
+
 ### What was the top ranked model that performed?
 
 Second run with more features but no hyperparameter optimizations.
+
+The name of the model is WeightedEnsemble_L3
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
