@@ -62,3 +62,15 @@ Check again that the the python in the path is the same python of the notebook u
 They should be the same.
 
 Now you should be able to **pip install autogluon** and import it.
+
+## LightGBM might crash in MacOS
+
+Ref.: <https://github.com/microsoft/LightGBM/issues/4229>
+
+As stated at the bottom of the issue, try to downgrade libomp 11:
+
+```
+wget https://raw.githubusercontent.com/Homebrew/homebrew-core/fb8323f2b170bd4ae97e1bac9bf3e2983af3fdb0/Formula/libomp.rb
+brew unlink libomp
+brew install libomp.rb
+```
